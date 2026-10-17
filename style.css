@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1612441804231-77a36b284856?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW91bnRhaW4lMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.left-hadder {
+  color: white;
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: brown;
+    transition: all 0.2s linear;
+  }
+
+  button:hover {
+    transform: scale(1.08);
+  }
+}
+.right-img {
+  transition: all 0.2s linear;
+}
+.right-img:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    color: brown;
+    font-weight: 900;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+  }
+
+  .box-1 {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 0 2px 0px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
+.round-icon {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    color: white;
+    transform: scale(1.2);
+  }
+}
+
+@media(max-width: 576px){
+  .main{
+  height: auto;
+  min-height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1{
+    font-size: 40px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .right-img img{
+    width: 230px !important;
+    height: 250px !important;
+  }
+  }
+  .container{
+    .box{
+      flex-direction: column;
+    }
+  }
+}
+@media (min-width: 577px) and (max-width: 991px){
+  .box{
+      max-width: 100%;
+
+    .box-1{
+      height: 250px;
+      width: 250px;
+      gap: 15px;
+    }
+  }
+  .box img{
+    height: 250px !important;
+    width: 230px !important;
+  }
+}
+
+
+
+
+
